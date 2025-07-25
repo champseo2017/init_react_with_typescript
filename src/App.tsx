@@ -2,7 +2,6 @@ import { Button, DatePicker, Flex } from 'antd';
 import './App.css';
 
 function App() {
-  const unusedVariable = 'I will cause a lint error';
   return (
     <>
       <Flex>

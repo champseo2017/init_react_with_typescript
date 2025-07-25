@@ -16,6 +16,7 @@ export default tseslint.config(
   {
     files: ['src/**/*.{ts,tsx}'],
     plugins: {
+      '@typescript-eslint': tseslint.plugin,
       react: reactPlugin,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
@@ -39,6 +40,7 @@ export default tseslint.config(
       'react-refresh/only-export-components': 'warn',
       ...jsxA11y.configs.recommended.rules,
       ...tseslint.configs.recommendedTypeChecked.rules,
+      '@typescript-eslint/no-unused-vars': 'error',
     },
     settings: {
       react: {
